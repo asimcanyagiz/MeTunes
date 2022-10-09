@@ -1,5 +1,5 @@
 //
-//  Music.swift
+//  Movie.swift
 //  iOS-Bootcamp-Week3
 //
 //  Created by Asım can Yağız on 9.10.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Music: Decodable {
+struct Movie: Decodable {
     let artistName: String?
     let trackName: String?
     let artworkUrl100: URL?

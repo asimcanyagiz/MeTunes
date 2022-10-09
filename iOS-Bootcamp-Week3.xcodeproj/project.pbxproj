@@ -26,6 +26,21 @@
 		AB690AD528F2291000EE4B06 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB690AD428F2291000EE4B06 /* PodcastResponse.swift */; };
 		AB690AD928F2293000EE4B06 /* PodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB690AD828F2293000EE4B06 /* PodcastCollectionViewCell.swift */; };
 		AB690ADE28F22D4400EE4B06 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB690ADD28F22D4400EE4B06 /* MainView.swift */; };
+		ABDC8D6628F35FBF00E885D8 /* MusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D6528F35FBF00E885D8 /* MusicResponse.swift */; };
+		ABDC8D6828F3603E00E885D8 /* MusicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D6728F3603E00E885D8 /* MusicViewCell.swift */; };
+		ABDC8D6A28F360BE00E885D8 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D6928F360BE00E885D8 /* MusicView.swift */; };
+		ABDC8D6C28F3612700E885D8 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D6B28F3612700E885D8 /* MusicViewController.swift */; };
+		ABDC8D6E28F3639A00E885D8 /* MusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D6D28F3639A00E885D8 /* MusicRequest.swift */; };
+		ABDC8D7028F364F900E885D8 /* MusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D6F28F364F900E885D8 /* MusicDetailViewController.swift */; };
+		ABDC8D7228F3682100E885D8 /* MusicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7128F3682100E885D8 /* MusicDetailView.swift */; };
+		ABDC8D7428F36B0800E885D8 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7328F36B0800E885D8 /* MovieRequest.swift */; };
+		ABDC8D7628F36B8400E885D8 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7528F36B8400E885D8 /* MovieDetailView.swift */; };
+		ABDC8D7828F36BC300E885D8 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7728F36BC300E885D8 /* MovieDetailViewController.swift */; };
+		ABDC8D7A28F36C0D00E885D8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7928F36C0D00E885D8 /* Movie.swift */; };
+		ABDC8D7C28F36C2900E885D8 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7B28F36C2900E885D8 /* MovieResponse.swift */; };
+		ABDC8D7E28F36C5500E885D8 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7D28F36C5500E885D8 /* MovieViewCell.swift */; };
+		ABDC8D8028F36C7200E885D8 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D7F28F36C7200E885D8 /* MovieView.swift */; };
+		ABDC8D8228F36C9500E885D8 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC8D8128F36C9500E885D8 /* MovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +65,21 @@
 		AB690AD428F2291000EE4B06 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
 		AB690AD828F2293000EE4B06 /* PodcastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB690ADD28F22D4400EE4B06 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		ABDC8D6528F35FBF00E885D8 /* MusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponse.swift; sourceTree = "<group>"; };
+		ABDC8D6728F3603E00E885D8 /* MusicViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewCell.swift; sourceTree = "<group>"; };
+		ABDC8D6928F360BE00E885D8 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		ABDC8D6B28F3612700E885D8 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		ABDC8D6D28F3639A00E885D8 /* MusicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRequest.swift; sourceTree = "<group>"; };
+		ABDC8D6F28F364F900E885D8 /* MusicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailViewController.swift; sourceTree = "<group>"; };
+		ABDC8D7128F3682100E885D8 /* MusicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailView.swift; sourceTree = "<group>"; };
+		ABDC8D7328F36B0800E885D8 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
+		ABDC8D7528F36B8400E885D8 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		ABDC8D7728F36BC300E885D8 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		ABDC8D7928F36C0D00E885D8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		ABDC8D7B28F36C2900E885D8 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		ABDC8D7D28F36C5500E885D8 /* MovieViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
+		ABDC8D7F28F36C7200E885D8 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		ABDC8D8128F36C9500E885D8 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				AB690AB728F2257A00EE4B06 /* PodcastRequest.swift */,
+				ABDC8D6D28F3639A00E885D8 /* MusicRequest.swift */,
+				ABDC8D7328F36B0800E885D8 /* MovieRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -201,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				AB690AC928F2283500EE4B06 /* DetailView.swift */,
+				ABDC8D7528F36B8400E885D8 /* MovieDetailView.swift */,
+				ABDC8D7128F3682100E885D8 /* MusicDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				AB690ACC28F2286D00EE4B06 /* DetailViewController.swift */,
+				ABDC8D7728F36BC300E885D8 /* MovieDetailViewController.swift */,
+				ABDC8D6F28F364F900E885D8 /* MusicDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,7 +262,10 @@
 		AB690ACF28F228E000EE4B06 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ABDC8D7928F36C0D00E885D8 /* Movie.swift */,
+				ABDC8D7B28F36C2900E885D8 /* MovieResponse.swift */,
 				AB690AD028F228EC00EE4B06 /* Music.swift */,
+				ABDC8D6528F35FBF00E885D8 /* MusicResponse.swift */,
 				AB690AD228F228FC00EE4B06 /* Podcast.swift */,
 				AB690AD428F2291000EE4B06 /* PodcastResponse.swift */,
 			);
@@ -238,6 +277,8 @@
 			children = (
 				AB690AD728F2292800EE4B06 /* PodcastCollectionViewCell */,
 				AB690ADD28F22D4400EE4B06 /* MainView.swift */,
+				ABDC8D7F28F36C7200E885D8 /* MovieView.swift */,
+				ABDC8D6928F360BE00E885D8 /* MusicView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,6 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				AB690AD828F2293000EE4B06 /* PodcastCollectionViewCell.swift */,
+				ABDC8D7D28F36C5500E885D8 /* MovieViewCell.swift */,
+				ABDC8D6728F3603E00E885D8 /* MusicViewCell.swift */,
 			);
 			path = PodcastCollectionViewCell;
 			sourceTree = "<group>";
@@ -254,6 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				AB690A9D28F2243400EE4B06 /* MainViewController.swift */,
+				ABDC8D8128F36C9500E885D8 /* MovieViewController.swift */,
+				ABDC8D6B28F3612700E885D8 /* MusicViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -328,23 +373,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABDC8D7E28F36C5500E885D8 /* MovieViewCell.swift in Sources */,
 				AB690A9E28F2243400EE4B06 /* MainViewController.swift in Sources */,
+				ABDC8D6828F3603E00E885D8 /* MusicViewCell.swift in Sources */,
+				ABDC8D8028F36C7200E885D8 /* MovieView.swift in Sources */,
+				ABDC8D6A28F360BE00E885D8 /* MusicView.swift in Sources */,
 				AB690AD128F228EC00EE4B06 /* Music.swift in Sources */,
 				AB690AB328F2254300EE4B06 /* CGFloat+Extensions.swift in Sources */,
 				AB690A9A28F2243400EE4B06 /* AppDelegate.swift in Sources */,
 				AB690ACD28F2286D00EE4B06 /* DetailViewController.swift in Sources */,
+				ABDC8D6E28F3639A00E885D8 /* MusicRequest.swift in Sources */,
 				AB690A9C28F2243400EE4B06 /* SceneDelegate.swift in Sources */,
+				ABDC8D7428F36B0800E885D8 /* MovieRequest.swift in Sources */,
+				ABDC8D6628F35FBF00E885D8 /* MusicResponse.swift in Sources */,
+				ABDC8D7C28F36C2900E885D8 /* MovieResponse.swift in Sources */,
 				AB690AB828F2257A00EE4B06 /* PodcastRequest.swift in Sources */,
 				AB690ACA28F2283500EE4B06 /* DetailView.swift in Sources */,
+				ABDC8D7028F364F900E885D8 /* MusicDetailViewController.swift in Sources */,
 				AB690AD328F228FC00EE4B06 /* Podcast.swift in Sources */,
+				ABDC8D7828F36BC300E885D8 /* MovieDetailViewController.swift in Sources */,
 				AB690AB128F2252D00EE4B06 /* UIImage+Extensions.swift in Sources */,
+				ABDC8D8228F36C9500E885D8 /* MovieViewController.swift in Sources */,
 				AB690AD528F2291000EE4B06 /* PodcastResponse.swift in Sources */,
 				AB690ADE28F22D4400EE4B06 /* MainView.swift in Sources */,
+				ABDC8D6C28F3612700E885D8 /* MusicViewController.swift in Sources */,
+				ABDC8D7628F36B8400E885D8 /* MovieDetailView.swift in Sources */,
 				AB690ABF28F2266E00EE4B06 /* ErrorResponse.swift in Sources */,
 				AB690ABB28F2262B00EE4B06 /* NetworkService.swift in Sources */,
+				ABDC8D7A28F36C0D00E885D8 /* Movie.swift in Sources */,
 				AB690AC128F2267F00EE4B06 /* HTTPMethod.swift in Sources */,
 				AB690ABD28F2264E00EE4B06 /* DataRequest.swift in Sources */,
 				AB690AD928F2293000EE4B06 /* PodcastCollectionViewCell.swift in Sources */,
+				ABDC8D7228F3682100E885D8 /* MusicDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

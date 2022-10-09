@@ -53,13 +53,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func setupWindow(with windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
         let viewController = MainViewController()
-//        viewController.tabBarItem = UITabBarItem(title: <#T##String?#>, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
+        viewController.tabBarItem = UITabBarItem(title: "Podcast", image: UIImage(systemName: "music.mic"), selectedImage: UIImage(systemName: "music.mic"))
         let navigationController = UINavigationController(rootViewController: viewController)
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [navigationController]
+        
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
         self.window = window
+        
+        let musicScreenVC = UINavigationController(rootViewController: MusicViewController())
+        musicScreenVC.tabBarItem = UITabBarItem(title: "Music", image: UIImage(systemName: "music.quarternote.3"), selectedImage: UIImage(systemName: "music.quarternote.3"))
+        let movieScreenVC = UINavigationController(rootViewController: MusicViewController())
+        movieScreenVC.tabBarItem = UITabBarItem(title: "Movie", image: UIImage(systemName: "popcorn"), selectedImage: UIImage(systemName: "popcorn"))
+        tabBarController.viewControllers = [navigationController, musicScreenVC, movieScreenVC]
     }
 }
 
