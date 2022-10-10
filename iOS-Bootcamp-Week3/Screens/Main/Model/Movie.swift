@@ -10,7 +10,7 @@ import Foundation
 struct Movie: Decodable {
     let artistName: String?
     let trackName: String?
-    let artworkUrl100: URL?
+    let artworkLarge: URL?
     let releaseDate: String?
     let country: String?
     let primaryGenreName: String?
@@ -18,7 +18,7 @@ struct Movie: Decodable {
     enum CodingKeys: String, CodingKey {
         case artistName
         case trackName
-        case artworkUrl100 = "artworkUrl100"
+        case artworkLarge = "artworkUrl100"
         case releaseDate
         case country
         case primaryGenreName

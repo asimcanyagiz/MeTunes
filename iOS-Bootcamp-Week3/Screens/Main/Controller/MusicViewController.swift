@@ -65,7 +65,7 @@ extension MusicViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MusicCollectionViewCell
         let music = musicResponse?.results?[indexPath.row]
         cell.title = music?.trackName
-        cell.imageView.downloadImage(from: music?.artworkUrl100)
+        cell.imageView.downloadImage(from: music?.artworkLarge)
         return cell
     }
     

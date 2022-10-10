@@ -65,7 +65,7 @@ extension MovieViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MovieCollectionViewCell
         let movie = movieResponse?.results?[indexPath.row]
         cell.title = movie?.trackName
-        cell.imageView.downloadImage(from: movie?.artworkUrl100)
+        cell.imageView.downloadImage(from: movie?.artworkLarge)
         return cell
     }
     

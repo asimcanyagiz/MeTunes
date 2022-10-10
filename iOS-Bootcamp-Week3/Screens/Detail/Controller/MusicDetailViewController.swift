@@ -12,7 +12,7 @@ final class MusicDetailViewController: UIViewController {
     var music: Music? {
         didSet {
             title = music?.trackName
-            detailView.imageView.downloadImage(from: music?.artworkUrl100)
+            detailView.imageView.downloadImage(from: music?.artworkLarge)
             detailView.releaseDate = music?.releaseDate
             detailView.artistName = music?.artistName
             detailView.country = music?.country
