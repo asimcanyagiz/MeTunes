@@ -8,6 +8,9 @@
 import UIKit
 
 final class MainViewController: UIViewController {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private var models = [FavoritesItems]()
+    var personal = PersonalViewController()
     
     // MARK: - Properties
     private let mainView = MainView()
@@ -31,6 +34,7 @@ final class MainViewController: UIViewController {
         navigationItem.searchController = searchController
         
         fetchPodcasts()
+        getAllItems()
     }
     
     // MARK: - Methods
@@ -71,6 +75,20 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         collectionView.reloadItems(at: [indexPath])
+    }
+    
+    func getAllItems () {
+        
+        do {
+            models = try context.fetch(FavoritesItems.fetchRequest())
+            DispatchQueue.main.async {
+                self.personal.tableView.reloadData()
+            }
+        }
+        catch {
+            // error
+        }
+        
     }
 }
 

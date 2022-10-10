@@ -29,24 +29,17 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         tableView.frame = view.bounds
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
     }
-    
-    @objc private func didTapAdd() {
-        let alert = UIAlertController(title: "New Item",
-                                      message: "Enter new item",
-                                      preferredStyle: .alert)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        title = "Favorites"
+        getAllItems()
         
-        alert.addTextField(configurationHandler: nil)
-        alert.addAction(UIAlertAction(title: "Submit", style: .cancel, handler: { [weak self] _ in
-            guard let field = alert.textFields?.first , let text = field.text, !text.isEmpty else {
-                return
-            }
-            
-            self?.createItem(name: text)
-            
-        }))
-        present(alert, animated: true)
+        view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.frame = view.bounds
     }
     
     private var models = [FavoritesItems]()
@@ -57,7 +50,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = model.artist
+        cell.textLabel?.text = model.track
         return cell
     }
     
@@ -66,7 +59,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         
         let item = models[indexPath.row]
         
-        let sheet = UIAlertController(title: "Edit",
+        let sheet = UIAlertController(title: nil,
                                       message: nil,
                                       preferredStyle: .actionSheet)
         
@@ -78,7 +71,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
                                           preferredStyle: .alert)
             
             alert.addTextField(configurationHandler: nil)
-            alert.textFields?.first?.text = item.artist
+            alert.textFields?.first?.text = item.track
             alert.addAction(UIAlertAction(title: "Save", style: .cancel, handler: { [weak self] _ in
                 guard let field = alert.textFields?.first , let newName = field.text, !newName.isEmpty else {
                     return
@@ -115,7 +108,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
     
     func createItem(name: String){
         let newItem = FavoritesItems(context: context)
-        newItem.artist = name
+        newItem.track = name
         
         do {
             try context.save()
@@ -139,7 +132,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func updateItem(item: FavoritesItems, newName: String) {
-        item.artist = newName
+        item.track = newName
         
         do {
             try context.save()

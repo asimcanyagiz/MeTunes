@@ -18,8 +18,8 @@ extension FavoritesItems {
 
     @NSManaged public var artist: String?
     @NSManaged public var track: String?
-    @NSManaged public var artwork: String?
     @NSManaged public var country: String?
+    @NSManaged public var date: String?
 
 }
 

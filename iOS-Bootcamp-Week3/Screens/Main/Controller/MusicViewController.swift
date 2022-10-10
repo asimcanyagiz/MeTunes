@@ -8,6 +8,9 @@
 import UIKit
 
 final class MusicViewController: UIViewController {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private var models = [FavoritesItems]()
+    var personal = PersonalViewController()
     
     // MARK: - Properties
     private let mainView = MusicView()
@@ -31,6 +34,7 @@ final class MusicViewController: UIViewController {
         navigationItem.searchController = searchController
         
         fetchMusics()
+        getAllItems()
     }
     
     // MARK: - Methods
@@ -71,6 +75,19 @@ extension MusicViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         collectionView.reloadItems(at: [indexPath])
+    }
+    func getAllItems () {
+        
+        do {
+            models = try context.fetch(FavoritesItems.fetchRequest())
+            DispatchQueue.main.async {
+                self.personal.tableView.reloadData()
+            }
+        }
+        catch {
+            // error
+        }
+        
     }
 }
 
