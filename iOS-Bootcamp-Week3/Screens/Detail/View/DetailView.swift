@@ -13,7 +13,8 @@ final class DetailView: UIView {
             releaseDateKeyLabel.text = "Release Date:"
 //            releaseDateKeyLabel.textAlignment = .left
             releaseDateKeyLabel.font = .boldSystemFont(ofSize: 17.0)
-            releaseDateLabel.text = releaseDate ?? "-"
+            let newDate = releaseDate?.split(separator: "T")
+            releaseDateLabel.text = String(newDate?[0] ?? "-")
 //            releaseDateLabel.textAlignment = .right
         }
     }

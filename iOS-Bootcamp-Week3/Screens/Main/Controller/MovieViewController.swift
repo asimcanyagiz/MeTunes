@@ -34,7 +34,7 @@ final class MovieViewController: UIViewController {
     }
     
     // MARK: - Methods
-    private func fetchMovies(with text: String = "Movie") {
+    private func fetchMovies(with text: String = "movie") {
         networkService.request(MovieRequest(searchText: text)) { result in
             switch result {
             case .success(let response):
