@@ -65,7 +65,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         musicScreenVC.tabBarItem = UITabBarItem(title: "Music", image: UIImage(systemName: "music.quarternote.3"), selectedImage: UIImage(systemName: "music.quarternote.3"))
         let movieScreenVC = UINavigationController(rootViewController: MovieViewController())
         movieScreenVC.tabBarItem = UITabBarItem(title: "Movie", image: UIImage(systemName: "popcorn"), selectedImage: UIImage(systemName: "popcorn"))
-        tabBarController.viewControllers = [navigationController, musicScreenVC, movieScreenVC]
+        let personalScreenVc = UINavigationController(rootViewController: PersonalViewController())
+        personalScreenVc.tabBarItem = UITabBarItem(title: "Person", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person"))
+        tabBarController.viewControllers = [navigationController, musicScreenVC, movieScreenVC, personalScreenVc]
     }
 }
 
