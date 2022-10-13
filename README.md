@@ -3,11 +3,11 @@
 
 
 <hr>
-<h4 align="center">MeTunes! a library for itunes! <a href="https://github.com/asimcanyagiz/iOS-Bootcamp-Week3" target="_blank">MeTunes</a>.</h4>
+<h4 align="center">MeTunes! a library for itunes! <a href="https://github.com/asimcanyagiz/MeTunes" target="_blank">MeTunes</a>.</h4>
 
 <p align="center">
-  <img src="https://img.shields.io/github/commit-activity/y/asimcanyagiz/iOS-Bootcamp-Week3">
-  <img src="https://img.shields.io/github/license/asimcanyagiz/iOS-Bootcamp-Week3">
+  <img src="https://img.shields.io/github/commit-activity/y/asimcanyagiz/MeTunes">
+  <img src="https://img.shields.io/github/license/asimcanyagiz/MeTunes">
 </p>
 
 <p align="center">
@@ -42,7 +42,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) instal
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/asimcanyagiz/iOS-Bootcamp-Week3
+$ git clone https://github.com/asimcanyagiz/MeTunes
 
 # Go into the repository
 $ cd calculator
@@ -51,7 +51,7 @@ $ cd calculator
 
 ## Download
 
-You can [download](https://github.com/asimcanyagiz/iOS-Bootcamp-Week3) the latest installable version of Calculator for macOS and Linux.
+You can [download](https://github.com/asimcanyagiz/MeTunes) the latest installable version of Calculator for macOS and Linux.
 
 ## Technologies Used
 
